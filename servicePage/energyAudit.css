@@ -1,6 +1,6 @@
 #energyService {
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   background-image: url("https://images.unsplash.com/photo-1454779132693-e5cd0a216ed3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZW5lcmd5fGVufDB8fDB8fHww");
   background-size: cover;
   background-position: center;
@@ -9,5 +9,98 @@
   top: 0; */
 }
 #energyContent {
-  padding: 80px 0;
+  padding: 40px 0;
+}
+
+.energyHeading {
+  margin-bottom: 100px;
+}
+.energyHeading h3 {
+  font-size: 2.6vw;
+}
+.energyHeading p {
+  font-size: 1.2vw;
+}
+.ovFl {
+  overflow: hidden;
+}
+
+.energyServicecontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgba(237, 226, 226, 0.475);
+  padding: 0 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.energyServicecontent:hover {
+  scale: 1.1;
+  transition: 0.5s;
+}
+.energyServicecontentImg {
+  height: 300px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.energyServicecontentImg:hover {
+  scale: 1.1;
+  transition: 0.5s;
+}
+.energyServicecontentImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#whychoose {
+  padding: 40px 0;
+}
+.whyEnergy ol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.whyEnergy ol li {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.whyEnergy ol li i {
+  margin-right: 30px;
+  font-size: 40px;
+}
+#energyContent h3 {
+  text-align: center;
+  color: #1e2d3b;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+#energyContent h3:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  width: 40%;
+  height: 2px;
+  background-color: #eece20;
+}
+#whychoose h3 {
+  text-align: center;
+  color: #1e2d3b;
+  position: relative;
+  padding-bottom: 20px;
+}
+#whychoose h3:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  width: 40%;
+  height: 2px;
+  background-color: #eece20;
 }
