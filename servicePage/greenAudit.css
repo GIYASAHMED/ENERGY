@@ -1,0 +1,26 @@
+#energyService {
+  width: 100%;
+  height: 70vh;
+  background-image: url("https://plus.unsplash.com/premium_photo-1716762544305-451991dff0b1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdyZWVuJTIwYXVkaXR8ZW58MHx8MHx8fDA%3D");
+  background-size: cover;
+  background-position: center;
+}
+.greenLeft {
+  text-align: left !important;
+}
+.greenLeft:after {
+  content: "";
+  position: absolute;
+  left: 20% !important;
+  bottom: 0;
+  transform: translate(-50%);
+  width: 20%;
+  height: 2px;
+  background-color: #eece20;
+}
+.safetyContent P span {
+  font-size: 30px;
+}
+.safetyContent p {
+  text-align: justify;
+}
