@@ -1,12 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
 #energyService {
   width: 100%;
   height: 70vh;
   background-image: url("https://images.unsplash.com/photo-1454779132693-e5cd0a216ed3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZW5lcmd5fGVufDB8fDB8fHww");
   background-size: cover;
   background-position: center;
-  /* position: fixed;
-  left: 0;
-  top: 0; */
 }
 #energyContent {
   padding: 40px 0;
@@ -18,11 +26,8 @@
 .energyHeading h3 {
   font-size: 2.6vw;
 }
-.energyHeading p {
-  font-size: 1.2vw;
-}
-.ovFl {
-  overflow: hidden;
+p {
+  font-size: 16px;
 }
 
 .energyServicecontent {
@@ -53,6 +58,33 @@
   height: 100%;
   object-fit: cover;
 }
+@media (max-width: 900px) {
+  .energyHeading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .energyHeading h3 {
+    font-size: 7vw;
+  }
+
+  .energyHeading {
+    margin-bottom: 50px;
+  }
+  .energyServicecontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: rgba(237, 226, 226, 0.475);
+    padding: 0 20px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+}
+/* Energy service section ends */
+/* why  choose section start */
 #whychoose {
   padding: 40px 0;
 }
@@ -71,6 +103,12 @@
   margin-right: 30px;
   font-size: 40px;
 }
+@media (max-width: 900px) {
+  .whyEnergy ol li {
+    font-size: 14px;
+  }
+}
+/* why  choose section ends */
 #energyContent h3 {
   text-align: center;
   color: #1e2d3b;

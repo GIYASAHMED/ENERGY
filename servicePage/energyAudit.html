@@ -16,8 +16,8 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="./energyAudit.css" />
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
     <header>
@@ -39,36 +39,50 @@
             </ul>
           </div>
         </nav>
+        <!-- Mobile Navbar Start -->
         <nav class="mobileNavbar">
           <div class="CompanyLogo">
             <i class="ri-building-2-fill"></i>
             <h3>ENERGY</h3>
           </div>
-          <i class="ri-menu-2-line"></i>
+          <div class="mobileMenu" id="mobileMenu">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li class="servicemenu">
+                <a href="#">Services</a>
+              </li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <i class="ri-menu-2-line" id="burgerMenu"></i>
         </nav>
+        <!-- Mobile Navbar End -->
       </div>
     </header>
 
-    <!-- service Content section -->
+    <!--Energy service Content section start -->
     <section id="energyService"></section>
     <section id="energyContent">
-      <div class="energyHeading text-center">
-        <h3>Energy Audit & Energy Efficiency Services</h3>
-        <p>Unlock Energy Savings for a Sustainable Future</p>
-        <p>
-          ⭐ Save up to 30% on energy bills | 💡 1-Year Payback | 🌍
-          Eco-Friendly Solutions
-        </p>
-      </div>
-
       <div class="container">
-        <div class="row ovFl">
-          <div class="col-lg-3">
+        <div class="energyHeading text-center">
+          <h3>Energy Audit & Energy Efficiency Services</h3>
+          <p>Unlock Energy Savings for a Sustainable Future</p>
+          <p>
+            ⭐ Save up to 30% on energy bills | 💡 1-Year Payback | 🌍
+            Eco-Friendly Solutions
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
             <div class="energyServicecontent">
               <h3>Measurable Energy Savings: 10–30% reduction guaranteed</h3>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 mb-3">
             <div class="energyServicecontentImg">
               <img
                 class="img-fluid"
@@ -77,12 +91,12 @@
               />
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 mb-3">
             <div class="energyServicecontent">
               <h3>Expert Team: 30+ years of industry experience</h3>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 mb-3">
             <div class="energyServicecontentImg">
               <img
                 class="img-fluid"
@@ -92,8 +106,8 @@
             </div>
           </div>
         </div>
-        <div class="row ovFl mt-3">
-          <div class="col-lg-3 overflowAnimation">
+        <div class="row mt-3 mb-3">
+          <div class="col-lg-3">
             <div class="energyServicecontentImg">
               <img
                 class="img-fluid"
@@ -102,12 +116,12 @@
               />
             </div>
           </div>
-          <div class="col-lg-3 overflowAnimation">
+          <div class="col-lg-3">
             <div class="energyServicecontent">
               <h3>Comprehensive Service: From audits to implementation</h3>
             </div>
           </div>
-          <div class="col-lg-3 overflowAnimation">
+          <div class="col-lg-3">
             <div class="energyServicecontentImg">
               <img
                 class="img-fluid"
@@ -116,7 +130,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-3 overflowAnimation">
+          <div class="col-lg-3">
             <div class="energyServicecontent">
               <h3>Fast Payback: ROI within 12 months</h3>
             </div>
@@ -124,6 +138,8 @@
         </div>
       </div>
     </section>
+    <!-- Energy service Content section ends -->
+    <!-- Why choose Content section ends -->
     <section id="whychoose">
       <div class="container">
         <div class="energyHeading text-center">
@@ -161,14 +177,90 @@
                 <i class="ri-arrow-right-fill"></i>Discover renewable energy
                 integration points
               </li>
-              <h4>Which Audit Fits You?</h4>
+              <h4 class="mt-5">Which Audit Fits You?</h4>
               <button>Click here</button>
             </ol>
           </div>
         </div>
       </div>
     </section>
+    <!-- Contact section Start -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="container">
+        <div class="footer">
+          <div class="row">
+            <div class="col-lg-6 mb-5">
+              <div class="contactContent">
+                <div class="inquiry">
+                  <h3>Inquiries</h3>
+                  <p>
+                    For any inquiries, questions or commendations, please call:
+                    123-456-7890 or fill out the following form
+                  </p>
+                </div>
+                <div class="headOffice">
+                  <h3>Head Office</h3>
+                  <p>500 Terry Francine Street San Francisco, CA 94158</p>
+                  <p>
+                    info@mysite.com <br />
+                    Tel: 123-456-7890 <br />Fax: 123-456-7890
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <form>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="number" class="form-label">Mobile Number</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="number"
+                      placeholder="Your Mobile no"
+                      required
+                    />
+                  </div>
+                </div>
 
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                    placeholder="Write your message..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container copyright">
+        <div class="row">
+          <div class="col-lg-12">
+            <p>@copyright</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact section Ends -->
+    <!-- Why choose Content section ends -->
     <!-- Bootstrap js cdn Link -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -180,6 +272,6 @@
       integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>
